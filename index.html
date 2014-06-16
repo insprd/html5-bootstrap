@@ -4,7 +4,11 @@
 
 <head prefix="og: http://ogp.me/ns# website: http://ogp.me/ns/website#">
 
-  <meta charset="utf-8"/>
+	<!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+
+	<meta charset="utf-8"/>
 	
 	<title></title>
 	
@@ -27,7 +31,7 @@
 	
 	<!--set proper url-->
 	<link rel="canonical" href="http://www.example.com/" />
-	<!--if this is a paginated blog, use prev and next page links-->
+	<!--if this is a paginated blog, use prev and next page links:-->
 	<link rel="prev" href="http://www.example.com/page1.htm">
 	<link rel="next" href="http://www.example.com/page3.htm">
 
@@ -50,12 +54,12 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 	<link rel="apple-touch-icon" href=""/>
 	
-	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	
-	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"/>
-	<link rel="stylesheet" type="text/css" href=""/>
+	<link rel="stylesheet" src="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css"/>
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<!--Remove if unnecessary, but most basic projects will involve jquery at some point.-->
 	
 	<script src=""></script>
 	<!--In HTML5, the type attribute is no longer required. The default value is "text/javascript".-->
