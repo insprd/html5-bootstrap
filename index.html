@@ -35,15 +35,28 @@
 	<link rel="prev" href="http://www.example.com/page1.htm">
 	<link rel="next" href="http://www.example.com/page3.htm">
 
+	<meta property='og:locale' content='en_us' />
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/> <!--must be absolute url-->
 	<meta property="og:description" content=""/>
-	
-	<meta name="twitter:card" value="">
-	<meta name="twitter:site" value="">
-	<meta name="twitter:creator" value="">
+	<!--if the site has an associated facebook page-->
+	<meta property="fb:admins" content="Facebook numberic ID" />
+
+	<!-- twitter card data (must be registered) --> 
+	<meta name="twitter:card" content="summary_large_image"> 
+	<meta name="twitter:site" content="@publisher_handle"> 
+	<meta name="twitter:title" content="Page Title"> 
+	<meta name="twitter:description" content="Page description less than 200 characters"> 
+	<meta name="twitter:creator" content="@author_handle"> 
+	<!-- Twitter summary card with large image must be at least 280x150px --> 
+	<meta name="twitter:image:src" content=" http://www.example.com/image.html">
+	<!--If this html page is for a product, you can add additional freeform variables-->
+	<meta name="twitter:data1" content="$3"> 
+	<meta name="twitter:label1" content="Price"> 
+	<meta name="twitter:data2" content="Black"> 
+	<meta name="twitter:label2" content="Color">
 
 	<meta itemprop="name" content=""/>
 	<meta itemprop="description" content=""/>
