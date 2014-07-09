@@ -4,7 +4,32 @@
 	text-rendering: optimizeLegibility; /* this is only default in Firefox, for some reason */
 	-webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
+
+    -moz-font-feature-settings:"liga=1, clig=1"; 
+    -ms-font-feature-settings:"liga" 1, "clig" 1; 
+    -o-font-feature-settings:"liga" 1, "clig" 1; 
+    -webkit-font-feature-settings:"liga" 1, "clig" 1; 
+    font-feature-settings:"liga" 1, "clig" 1;
+
 	}
+
+    /*
+
+    Commonly available OpenType font features:
+
+    Common ligatures                "liga"
+    Discretionary ligatures         "dlig"
+    Historical ligatures            "hlig"
+    Contextual ligatures            "clig"
+    Small caps                      "smcp"
+    Lining numerals                 "lnum"
+    Old-style numerals              "onum"
+    Swash alternates (index number) "swsh" n
+    Styleset (01–20)                "ss01–20"
+
+    You can also use the generator at http://clagnut.com/sandbox/css3/
+    
+    */
 
 p {
     -webkit-hyphens: auto;
@@ -17,6 +42,7 @@ p {
 
     -webkit-hyphenate-character: "\2013";
 }
+
 
 q, blockquote {
     quotes: "\201C" "\201D" "\2018" "\2019";
