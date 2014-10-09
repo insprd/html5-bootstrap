@@ -58,4 +58,48 @@ address {
 } 
 
 
+/*
+
+Medium-style smart underlines, with retina-pixel support.
+
+Colors will need to be updated according to your theme.
+
+Add additional rules for hover links if necessary.
+
+Or, use sass to pass color variables to a single rule.
+
+*/
+
+.retina-underline {
+
+    text-decoration: none;
+    position: relative;
+
+    text-shadow: -1px -1px 0 #fff,
+                  1px -1px 0 #fff,
+                  -1px 1px 0 #fff,
+                   1px 1px 0 #fff;
+
+    background-image: linear-gradient(to top,
+                            rgba(0, 0, 0, 0),
+                            rgba(0, 0, 0, 0) 2px,
+                            #333333 2px,
+                            #333333 3px,
+                            rgba(0, 0, 0, 0) 3px);
+
+ }
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+
+    .retina-underline {
+        background-image: linear-gradient(to top, 
+                                rgba(0, 0, 0, 0), 
+                                rgba(0, 0, 0, 0) 2px, 
+                                #333333 2px, 
+                                #333333 2.5px, 
+                                rgba(0, 0, 0, 0) 2.5px);
+    }
+
+}
+
 /* add font-face groups here */
