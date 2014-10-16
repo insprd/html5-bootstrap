@@ -5,6 +5,9 @@
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: none;
 
+    /* Due to its sub-pixel antialiasing algorithm, OS X tends to render light text on dark backgrounds too bold. Firefox finally added this property in v25 */
+    -moz-osx-font-smoothing: grayscale;
+
     -moz-font-feature-settings:"liga=1, clig=1"; 
     -ms-font-feature-settings:"liga" 1, "clig" 1; 
     -o-font-feature-settings:"liga" 1, "clig" 1; 
