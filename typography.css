@@ -60,6 +60,27 @@ address {
     font-weight: normal;
 } 
 
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+ 
+  /* makes all browsers position the sup/sup properly, relative to the surrounding text */
+  position: relative;
+  
+  vertical-align: baseline;
+}
+ 
+sup {
+  /* Move the superscripted text up */
+  top: -0.5em;
+}
+ 
+sub {
+  /* Move the subscripted text down, but only
+     half as far down as the superscript moved up */
+  bottom: -0.25em;
+} 
+
 
 /*
 
