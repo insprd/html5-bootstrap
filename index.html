@@ -62,10 +62,16 @@
 	<meta itemprop="description" content=""/>
 	<meta itemprop="image" content=""/>
 	
+	<!--web app settings for iOS-->
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 	<link rel="apple-touch-icon" href=""/>
+
+	<!--web app settings for Android (Chrome)-->
+	<link rel="manifest" href="manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width"> <!--remove if using iOS settings in tandem-->
 
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 
