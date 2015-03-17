@@ -1,19 +1,12 @@
-@charset "UTF-8"; /* Enables extended character support in the CSS */
+@charset "UTF-8"; /* Enable extended character support in the CSS. */
 
 * {
-    text-rendering: optimizeLegibility; /* this is only default in Firefox, for some reason */
-    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; /* This is only default in Firefox, for some reason */
+
+    -webkit-font-smoothing: antialiased; /* Disable unsightly font treatments in webkit */
     -webkit-text-size-adjust: none;
 
-    
     -moz-osx-font-smoothing: grayscale; /* Due to its sub-pixel antialiasing algorithm, OS X tends to render light text on dark backgrounds too bold. Firefox finally added this property in v25 */
-
-    -moz-font-feature-settings:"liga=1, clig=1"; 
-    -ms-font-feature-settings:"liga" 1, "clig" 1; 
-    -o-font-feature-settings:"liga" 1, "clig" 1; 
-    -webkit-font-feature-settings:"liga" 1, "clig" 1; 
-    font-feature-settings:"liga" 1, "clig" 1;
-}
 
     /*
 
@@ -33,21 +26,27 @@
     
     */
 
+    -moz-font-feature-settings:"liga=1, clig=1"; 
+    -ms-font-feature-settings:"liga" 1, "clig" 1; 
+    -o-font-feature-settings:"liga" 1, "clig" 1; 
+    -webkit-font-feature-settings:"liga" 1, "clig" 1; 
+    font-feature-settings:"liga" 1, "clig" 1;
+}
+
 p {
-    -webkit-hyphens: auto;
+    -webkit-hyphens: auto; /* Use automatic hyphenation */
     -moz-hyphhens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
 
-    -ms-hyphenate-limit-chars: 12;
+    -ms-hyphenate-limit-chars: 12; /* Minimum number of characters a word should have before allowing a hyphen. */
     hyphenate-limit-chars: 12;
 
-    -webkit-hyphenate-character: "\2013"; /* Uses the more typographically appropriate en dash */
+    -webkit-hyphenate-character: "\2013"; /* Use the more typographically appropriate en dash */
 }
 
-
 q, blockquote {
-    quotes: "\201C" "\201D" "\2018" "\2019"; /* Uses better quotation marks */
+    quotes: "\201C" "\201D" "\2018" "\2019"; /* Use better quotation marks */
 }
 
 h1 a, h2 a {
@@ -59,7 +58,6 @@ address {
     font-style: normal;
     font-weight: normal;
 } 
-
 
 sub, sup {
   font-size: 75%; /* sub/sup is relative to the surrounding text */
@@ -76,20 +74,17 @@ sub {
   bottom: -0.25em; /* Move the subscripted text down, but only half as far as the superscript */
 }
 
-
 /*
 
 Medium-style smart underlines, with retina-pixel support.
 
 Colors will need to be updated according to your theme.
 
-Add additional rules for hover links if necessary.
+Add additional rules for :hover if necessary.
 
 Or, use sass to pass color variables to a single rule.
 
 */
-
-
 
 .retina-underline { /* For @1x screens */
 
@@ -113,6 +108,7 @@ Or, use sass to pass color variables to a single rule.
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) { /* For retina and above. Half-pixel measurements are a scaling hack. */
 
     .retina-underline {
+
         background-image: linear-gradient(to top, 
                                 rgba(0, 0, 0, 0), 
                                 rgba(0, 0, 0, 0) 2px, 
