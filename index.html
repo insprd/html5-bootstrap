@@ -8,7 +8,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
 
-	<meta charset="utf-8"/>
+	<meta charset="utf-8"/> <!-- allows unescaped special characters -->
 	
 	<title></title>
 	
@@ -16,7 +16,7 @@
 	<meta http-equiv="x-dns-prefetch-control" content="off">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--This meta tag should be replaced by adding:
-	Header set X-UA-Compatible "IE=edge"
+		Header set X-UA-Compatible "IE=edge"
 	to the root .htaccess file -->
 	
 	<meta name="robots" content="index,follow">
@@ -43,25 +43,26 @@
 	<meta property="og:url" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/> <!--must be absolute url-->
+	<meta property="og:image" content=""/> <!--must be an absolute url-->
 	<meta property="og:description" content=""/>
 	<!--if the site has an associated facebook page-->
 	<meta property="fb:admins" content="Facebook numberic ID" />
 
-	<!-- twitter card data (must be registered) --> 
+	<!-- twitter card data --> 
 	<meta name="twitter:card" content="summary_large_image"> 
 	<meta name="twitter:site" content="@publisher_handle"> 
 	<meta name="twitter:title" content="Page Title"> 
 	<meta name="twitter:description" content="Page description less than 200 characters"> 
 	<meta name="twitter:creator" content="@author_handle"> 
 	<!-- Twitter summary card with large image must be at least 280x150px --> 
-	<meta name="twitter:image:src" content=" http://www.example.com/image.html">
+	<meta name="twitter:image" content=" http://www.example.com/image.html">
 	<!--If this html page is for a product, you can add additional freeform variables-->
 	<meta name="twitter:data1" content="$3"> 
 	<meta name="twitter:label1" content="Price"> 
 	<meta name="twitter:data2" content="Black"> 
 	<meta name="twitter:label2" content="Color">
 
+	<!-- schema.org tags-->
 	<meta itemprop="name" content=""/>
 	<meta itemprop="description" content=""/>
 	<meta itemprop="image" content=""/>
